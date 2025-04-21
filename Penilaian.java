@@ -10,10 +10,11 @@ public class Penilaian {
         this.nilaiTugas = tugas;
         this.nilaiUTS = uts;
         this.nilaiUAS = uas;
+        hitungNilaiAKhir();
     }
 
     void hitungNilaiAKhir() {
-        nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4); 
+        this.nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4); 
     }
 
     void tampilPenilaian() {
