@@ -66,7 +66,7 @@ public class Main {
                     
                     break;
                 case 0:
-                    
+                System.out.println("Program selesai.");
                     break;
             
                 default:
