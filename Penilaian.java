@@ -17,8 +17,6 @@ public class Penilaian {
     }
 
     void tampilPenilaian() {
-        mahasiswa.tampilMahasiswa();
-        mataKuliah.tampilMatkul();
         System.out.println("Nilai Tugas : " + nilaiTugas);
         System.out.println("Nilai UTS   : " + nilaiUTS);
         System.out.println("Nilai UAS   : " + nilaiUAS);

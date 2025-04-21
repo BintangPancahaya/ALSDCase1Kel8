@@ -38,7 +38,6 @@ public class Main {
             pilihan = sc.nextByte();
             switch (pilihan) {
                 case 1:
-                    
                     break;
                 case 2:
                     
