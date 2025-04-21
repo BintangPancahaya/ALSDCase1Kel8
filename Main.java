@@ -48,8 +48,8 @@ public class Main {
                     break;
                 case 3:
                 System.out.println("\n=== DATA PENILAIAN MAHASISWA ===");
-                    for (Penilaian p : daftarNilai) {
-                        p.tampilPenilaian();
+                    for (Penilaian Penilaian : penilaian) {
+                        Penilaian.tampilPenilaian();
                     }
                     break;
                 case 4:
