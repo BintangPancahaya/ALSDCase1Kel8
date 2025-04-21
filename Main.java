@@ -40,7 +40,11 @@ public class Main {
                 case 1:
                     break;
                 case 2:
-                    
+                System.out.println("\n=== DATA MATA KULIAH ===");
+                    for (Matkul Matkul : mk) {
+                        Matkul.tampilMatkul();
+                        System.out.println();
+                    }
                     break;
                 case 3:
                     

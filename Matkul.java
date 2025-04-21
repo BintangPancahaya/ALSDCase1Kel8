@@ -11,5 +11,6 @@ public class Matkul {
     void tampilMatkul() {
         System.out.println("Kode MK : " + kodeMK);
         System.out.println("Nama MK : " + namaMK);
+        System.out.println("SKS     : " + sks);
     }
 }
