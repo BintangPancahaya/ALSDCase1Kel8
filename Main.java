@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
+    public static void searchNIM(Penilaian[] penilaian, String nim) {
+        boolean ditemukan = false;
+        for (Penilaian p : penilaian) {
+            if (p.mahasiswa.NIM.equalsIgnoreCase(nim)) {
+                p.tampilPenilaian();
+                ditemukan = true;
+            }
+        }
+        if (!ditemukan) {
+            System.out.println("Data dengan NIM " + nim + " tidak ditemukan.\n");
+        }
+    }
 
     static Mahasiswa[] mhs = {
         new Mahasiswa("22001", "Ali Rahman", "D4 Teknik Informatika"),
@@ -63,9 +75,11 @@ public class Main {
                     
                     break;
                 case 5:
-                System.out.print("Masukkan NIM yang ingin dicari: ");
-                String cariNIM = sc.nextLine();
-                boolean ditemukan = false;    
+                    sc.nextLine(); 
+                    System.out.print("Masukkan NIM: ");
+                    String cariNIM = sc.nextLine();
+                    System.out.println("\n=== HASIL PENCARIAN PENILAIAN ===");
+                    searchNIM(penilaian, cariNIM);
                     break;
                 case 0:
                 System.out.println("Program selesai.");
