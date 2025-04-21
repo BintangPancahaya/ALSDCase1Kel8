@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        Mahasiswa[] daftarMahasiswa = new Mahasiswa[3];
         byte pilihan;
 
         do {
