@@ -1,9 +1,10 @@
 |  | Algoritma dan Struktur Data |
 |--|--|
-| NIM |  244107020115/05|
-      |  244107020034/19|
-      |  244107020239/23|
-      
+| NIM | 
+| 244107020115/05|
+|  244107020034/19|
+|  244107020239/23|
+
 | Nama Kelompok |  Bintang Pancahaya  | 
                 |  Nadya Aurora Geby Agista |
                 |  Rivan Fahlul Fadillah  |
