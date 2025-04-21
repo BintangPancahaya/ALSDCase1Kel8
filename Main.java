@@ -1,6 +1,26 @@
 import java.util.Scanner;
 
 public class Main {
+
+    static Mahasiswa[] mhs = {
+        new Mahasiswa("22001", "Ali Rahman", "D4 Teknik Informatika"),
+        new Mahasiswa("22002", "Budi Santoso", "D3 Sistem Informasi"),
+        new Mahasiswa("22003", "Citra Dewi", "D4 Sistem Informasi")
+    };
+
+    static Matkul[] mk = {
+        new Matkul("MK001", "Struktur Data", 3),
+        new Matkul("MK002", "Basis Data", 4),
+        new Matkul("MK003", "Desain Web", 2)
+    };
+
+    static Penilaian[] penilaian = {
+        new Penilaian(mhs[0], mk[0], 80, 85, 90),
+        new Penilaian(mhs[0], mk[1], 60, 75, 70),
+        new Penilaian(mhs[1], mk[0], 75, 70, 80),
+        new Penilaian(mhs[2], mk[1], 85, 90, 95),
+        new Penilaian(mhs[2], mk[2], 80, 90, 65)
+    };
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
