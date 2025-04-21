@@ -18,6 +18,13 @@ public class Main {
             pilihan = sc.nextByte();
             switch (pilihan) {
                 case 1:
+                System.out.println("\n=== Data Mahasiswa ====");
+                for (Mahasiswa mhs : daftarMahasiswa) {
+                    System.out.println("NIM : " + mhs. NIM);
+                    System.out.println("Nama : " + mhs.nama);
+                    System.out.println("Prodi : " + mhs.prodi);
+                    System.out.println();
+                }
                     
                     break;
                 case 2:
