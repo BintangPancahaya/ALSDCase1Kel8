@@ -1,6 +1,23 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public static void urutkanMahasiswaBerdasarkanNilai(Penilaian[] penilaian) {
+        for (int i = 0; i < penilaian.length - 1; i++) {
+            for (int j = 0; j < penilaian.length - i - 1; j++) {
+                if (penilaian[j].nilaiAkhir < penilaian[j + 1].nilaiAkhir) {
+                    Penilaian temp = penilaian[j];
+                    penilaian[j] = penilaian[j + 1];
+                    penilaian[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println("=== DATA MAHASISWA BERDASARKAN NILAI AKHIR (DESC) ===");
+        for (Penilaian p : penilaian) {
+            p.tampilPenilaian();
+        }
+    }
+
     public static void searchNIM(Penilaian[] penilaian, String nim) {
         boolean ditemukan = false;
         for (Penilaian p : penilaian) {
@@ -72,6 +89,7 @@ public class Main {
                     }
                     break;
                 case 4:
+                    urutkanMahasiswaBerdasarkanNilai(penilaian);
                     System.out.println();
                     break;
                 case 5:
