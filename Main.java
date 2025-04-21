@@ -63,7 +63,9 @@ public class Main {
                     
                     break;
                 case 5:
-                    
+                System.out.print("Masukkan NIM yang ingin dicari: ");
+                String cariNIM = sc.nextLine();
+                boolean ditemukan = false;    
                     break;
                 case 0:
                 System.out.println("Program selesai.");
