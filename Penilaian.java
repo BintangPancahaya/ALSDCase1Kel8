@@ -17,9 +17,13 @@ public class Penilaian {
     }
 
     void tampilPenilaian() {
-        System.out.println("Nilai Tugas : " + nilaiTugas);
-        System.out.println("Nilai UTS   : " + nilaiUTS);
-        System.out.println("Nilai UAS   : " + nilaiUAS);
-        System.out.println("Nilai Akhir : " + nilaiAkhir);
+        System.out.println("NIM: " + mahasiswa.NIM);
+        System.out.println("Nama: " + mahasiswa.nama);
+        System.out.println("Mata Kuliah: " + mataKuliah.namaMK);
+        System.out.println("Tugas: " + nilaiTugas);
+        System.out.println("UTS: " + nilaiUTS);
+        System.out.println("UAS: " + nilaiUAS);
+        System.out.println("Nilai Akhir: " + nilaiAkhir);
+        System.out.println();
     }
 }
